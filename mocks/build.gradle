@@ -1,0 +1,14 @@
+apply plugin: 'java-library'
+
+task copyTestResources(type: Copy) {
+    from "${projectDir}/src/main/resources"
+    into "${buildDir}/classes/test"
+}
+processTestResources.dependsOn copyTestResources
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+}
+
+sourceCompatibility = "1.7"
+targetCompatibility = "1.7"

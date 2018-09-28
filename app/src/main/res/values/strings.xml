@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">HackNewsReader</string>
+    <string name="story_info">%1$d points by %2$s %3$s ago | %4$s</string>
+</resources>
